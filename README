@@ -7,10 +7,20 @@ On Debian:
 
 $ apt-get install libgstrtspserver-0.10-dev
 
-gst-sh-mobile:
+Installation
+------------
 
-http://github.com/kfish/gst-sh-mobile
+This archive uses GNU autotools. For full usage instructions see the file
+INSTALL. The conventional build procedure applies:
 
+    $ ./configure
+    $ make
+    $ make install
+
+If INSTALL and configure are missing, you are using source from the repository
+and need to run the following command first:
+
+    $ autoreconf -vif
 
 To run the server:
 ------------------
